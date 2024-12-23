@@ -1,6 +1,3 @@
-# print("hello world")
-
-# book = "books/frankenstein.txt"
 def main():
     path = "books/frankenstein.txt"
     book_text = get_text(path)
@@ -12,7 +9,6 @@ def main():
 
 def get_word_ct(text):
     words = text.split()
-    # print(f"{len(words)} words fount in document")
     return len(words)
 
 def get_text(path):
@@ -42,7 +38,6 @@ def sort_dict(dict):
         list_of_dict["count"] = dict[key]
         sorted.append(list_of_dict)
     sorted.sort(reverse=True, key=sort_on)
-    # print(sorted)
     return sorted
 
 def sort_on(dict):
